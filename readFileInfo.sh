@@ -17,3 +17,6 @@ do
 	fi
     fi
 done
+
+file=$(find ${SHELL_PATH} -name "*.sh")
+echo $file
