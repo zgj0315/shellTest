@@ -28,4 +28,4 @@ echo 'CMD_FILE:'${CMD_FILE}
 # 获取命令绝对路径
 SHELL_PATH=`cd $(dirname "$CMD"); pwd`
 echo ${SHELL_PATH}
-echo "The running shell file:"`cd $(dirname "$CMD"); pwd`"/"${0##*/}
+echo "The running shell file:"`cd $(dirname "$0"); pwd`"/"${0##*/}
