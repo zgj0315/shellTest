@@ -20,3 +20,12 @@ else
 fi
 
 echo "input check success"
+# 获取命令字符串
+CMD="$0"
+echo 'CMD:'${CMD}
+CMD_FILE=${0##*/}
+echo 'CMD_FILE:'${CMD_FILE}
+# 获取命令绝对路径
+SHELL_PATH=`cd $(dirname "$CMD"); pwd`
+echo ${SHELL_PATH}
+echo "The running shell file:"`cd $(dirname "$CMD"); pwd`"/"${0##*/}
